@@ -2,7 +2,7 @@ import { Component, EventEmitter } from '@angular/core';
 import { Product } from '../models/product';
 
 @Component({
-  selector: 'app-products-list',
+  selector: 'products-list',
   templateUrl: './products-list.component.html',
   styleUrl: './products-list.component.css',
   inputs:['productList'],

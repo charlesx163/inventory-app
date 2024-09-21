@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Product } from './models/product';
 
 @Component({
-  selector: 'app-inventory-app',
+  selector: 'inventory-app',
   templateUrl: './inventory-app.component.html',
   styleUrl: './inventory-app.component.css'
 })
@@ -14,19 +14,19 @@ export class InventoryAppComponent {
       new Product(
         'MYSHOES',
         'Black Running Shoes',
-        '/resources/images/products/black-shoes.jpg',
+        '/public/images/products/black-shoes.jpg',
         ['Men', 'Shoes', 'Running Shoes'],
         109.99),
       new Product(
         'NEATOJACKET',
         'Blue Jacket',
-        '/resources/images/products/blue-jacket.jpg',
+        '/public/images/products/blue-jacket.jpg',
         ['Women', 'Apparel', 'Jackets & Vests'],
         238.99),
       new Product(
         'NICEHAT',
         'A Nice Black Hat',
-        '/resources/images/products/black-hat.jpg',
+        '/public/images/products/black-hat.jpg',
         ['Men', 'Accessories', 'Hats'],
         29.99)
       ];

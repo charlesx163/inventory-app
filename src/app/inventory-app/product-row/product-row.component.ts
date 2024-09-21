@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { Product } from '../models/product';
 
 @Component({
-  selector: 'app-product-row',
+  selector: 'product-row',
   templateUrl: './product-row.component.html',
   styleUrl: './product-row.component.css',
-  inputs:['product']
+  inputs:['product'],
+  host:{'class': 'item'}
 })
 export class ProductRowComponent {
   product!: Product;

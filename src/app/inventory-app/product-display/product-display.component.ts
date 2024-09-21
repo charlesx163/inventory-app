@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-product-display',
+  selector: 'price-display',
   templateUrl: './product-display.component.html',
   styleUrl: './product-display.component.css',
   inputs:['price']
