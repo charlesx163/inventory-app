@@ -12,6 +12,15 @@
         </div>
       </div>
     </div>
-    <div class="ui main text container">
-      <inventory-app></inventory-app> <!-- <--- Our app loads here! -->
+    <div class="nav">
+      <nav>
+        <a>Navigation:</a>
+        <ul>
+          <li><a [routerLink]="['home']">Home</a></li>
+          <li><a [routerLink]="['about']">About</a></li>
+          <li><a [routerLink]="['aboutus']">AboutUs</a></li>
+          <li><a [routerLink]="['inventory']">inventory</a></li>
+        </ul>
+      </nav>
+      <router-outlet />
     </div>

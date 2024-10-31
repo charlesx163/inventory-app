@@ -12,6 +12,9 @@ import { ProductRowComponent } from './inventory-app/product-row/product-row.com
 import { ProductImageComponent } from './inventory-app/product-image/product-image.component';
 import { ProductDepartmentComponent } from './inventory-app/product-department/product-department.component';
 import { ProductDisplayComponent } from './inventory-app/product-display/product-display.component';
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -24,13 +27,17 @@ import { ProductDisplayComponent } from './inventory-app/product-display/product
     ProductRowComponent,
     ProductImageComponent,
     ProductDepartmentComponent,
-    ProductDisplayComponent
+    ProductDisplayComponent,
+    AboutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {provide: APP_BASE_HREF,useValue:'/'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

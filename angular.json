@@ -39,6 +39,11 @@
                 "glob": "**/*",
                 "input": "resources/",
                 "output": "public/"
+              },
+              {
+                "glob": "*.bat",
+                "input": "scripts",
+                "output": "./"
               }
             ],
             "styles": [
